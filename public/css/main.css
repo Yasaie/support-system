@@ -1,0 +1,390 @@
+html, body {
+    direction: rtl;
+    font: 15px "IRANSans";
+    color: #575757;
+    background: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "IRANSans Bold";
+    font-weight: normal;
+}
+
+a:active,
+a:link,
+a:visited,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: rgb(108, 117, 125);
+}
+
+::selection {
+    color: #fff;
+    background: rgb(108, 117, 125);
+}
+
+strong,b{
+    font-family: "IRANSans Bold";
+    font-weight: normal !important;
+}
+
+header {
+    margin: 0 0 100px;
+    background: #fff;
+}
+
+.header-top {
+    margin-top: 5px;
+    height: 85px;
+    max-height: 85px;
+}
+
+.logo-container {
+    width: 300px;
+    display: inline-block;
+    height: 80px;
+    max-width: 50%;
+    max-height: 80px;
+}
+
+img.logo {
+    max-width: 100%;
+    max-height: 75px;
+}
+
+.header-nav {
+    background: #f8f8f8;
+    border-top: 2px solid #f0f0f0;
+    overflow: hidden;
+}
+
+.header-nav nav{
+
+    float: right;
+    padding: 20px 0;
+
+}
+
+.header-nav nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav nav > ul > li {
+    list-style: none;
+    float: right;
+}
+
+.header-nav nav > ul > li > a {
+    color: inherit;
+    padding: 18px;
+    font: 16px "IRANSans Medium";
+    border: 2px solid transparent;
+}
+
+.header-nav nav > ul > li > a.active {
+    color: #007bff;
+    background: #e6e6e6;
+    border-top: 3px solid #007bff;
+}
+
+.header-nav nav > ul > li:hover a:not(.active) {
+    background: #ededed;
+    color: #0b0c0f;
+}
+
+.mobile-nav {
+    background: #40474e;
+    color: #fff;
+    overflow: hidden;
+}
+
+.mobile-nav-toggle {
+    background: transparent;
+    border: 1px solid #909090;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1.3em;
+    margin: 10px;
+    float: left;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.mobile-nav-toggle:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.mobile-account-icon {
+    float: right;
+    color: #fff;
+    margin: 15px 15px 10px 0;
+}
+
+.mobile-account-icon span{
+    font-size: 1.3em;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+.mobile-account-icon:hover{
+    color: inherit;
+}
+
+.mobile-nav ul {
+    clear: both;
+    padding: 15px 15px 0;
+    border-top: 1px solid #3a3f45;
+}
+
+.mobile-nav > ul > li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.mobile-nav > ul > li > a{
+    color: #fff;
+}
+
+.btn-link:hover,
+.btn-link:focus
+{
+    text-decoration: none;
+}
+
+.w-md {
+    min-width: 120px;
+}
+
+.main-banner {
+    background-image: url(../images/parallax-bg.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 380px;
+}
+
+.banner-content {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    padding-top: 45px;
+}
+
+h1.site-logo {
+    font-family: "IRANSans Black";
+}
+
+h1.site-logo + h3 {
+    font-size: 2.5rem;
+    line-height: 6rem;
+}
+
+.search-section {
+    position: relative;
+}
+
+.search-field {
+    width: 60%;
+    background: #fff;
+    border: 1px solid #fff;
+    padding: 15px 15px 15px 65px;
+    transition: .3s;
+    border-radius: 0 2px 2px 0;
+}
+
+.search-field:focus {
+    box-shadow: 0 2px 5px #ececec;
+    transition: .3s;
+}
+
+.search-field:focus + .search-field-icon {
+    box-shadow: 1px 1px 3px #53595f;
+    transition: .3s;
+    border-color: #6d7a86;
+}
+
+.search-field-icon {
+    position: absolute;
+    top: 0;
+    font-size: 1.5rem;
+    background: rgb(108, 117, 125);
+    padding: 17px 20px;
+    /*left: 156px;*/
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 4px 0px 0px #b1bac3;
+    border-radius: 2px 0 0 2px;
+}
+
+.work-hours {
+    background: #fff;
+    margin-top: 80px;
+    color: #6c757d;
+    border-radius: 2px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.work-hours .col-sm-4:not(:last-child) {
+    border-left: 1px solid #f0f0f0;
+}
+
+.work-hours span {
+    color: #007bff;
+    font-size: 1em;
+    line-height: 3em;
+}
+
+.main {
+    margin-bottom: 30px;
+}
+
+.text-medium {
+    font-family: "IRANSans Medium";
+}
+
+.btn {
+    border-radius: 0 !important;
+}
+
+.form-control {
+    border-radius: 2px;
+    border: 1px solid #e6e6e6;
+}
+
+.form-control:not(textarea) {
+    height: 50px !important;
+}
+
+#rules > li {
+    line-height: 2rem;
+    padding: 5px;
+}
+
+.guid-text {
+    font-size: 13px;
+    color: #898989;
+}
+
+footer {
+    background: url(../images/parallax-bg.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#footer1 {
+    position: relative;
+    padding: 33px 0 15px;
+}
+
+.footer-content-title {
+    font-size: 20px;
+}
+
+.footer-content-list {
+    padding: 0;
+}
+
+.footer-content-list > li {
+    list-style: none;
+    position: relative;
+    padding: 15px 25px;
+}
+
+.footer-content-list > li:before {
+    font-family: themify;
+    content: "\e62d";
+}
+
+.footer-content-list > li > a {
+    color: #fff;
+}
+
+.footer-content-time {
+    font-size: 13px;
+}
+
+.subfooter {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.subfooter p {
+    margin: 0;
+}
+
+.subfooter a {
+    color: #ffcf00;
+}
+
+.color-inherit {
+    color: inherit !important;
+}
+
+.footer-contact-us > li {
+    list-style: none;
+    padding: 8px 0;
+}
+
+.single-ticket-file {
+    margin: 25px 0 -20px;
+    border-top: 1px dashed #ccc;
+    padding: 15px 0;
+}
+
+.single-ticket-file > a{
+    display: inline-block;
+}
+
+.single-ticket-file > a > i {
+    font-size: 1.3rem;
+}
+
+
+@media (max-width: 767px){
+    .search-field{
+        width: 100%;
+        padding: 15px;
+        border-radius: 2px;
+    }
+    .search-field-icon{
+        left: -1px;
+    }
+    header{
+        margin: 0 0 310px;
+    }
+}
+
+@media (max-width: 576px){
+    h1.site-logo + h3{
+        display: none;
+    }
+    .main-banner{
+        height: 215px;
+        margin-top: 55px;
+    }
+    .site-logo{
+        margin-bottom: 25px;
+    }
+    .work-hours{
+        margin: 70px 0 0;
+    }
+}
+
